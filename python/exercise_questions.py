@@ -1,5 +1,5 @@
 #stock question
-def maxprofit(a):
+'''def maxprofit(a):
     max=a[0]
     min=a[0]
     for i in range(1,len(a)):
@@ -14,4 +14,26 @@ def maxprofit(a):
             min=a[i]
     print(((max-min)/min)*100)
 a=[10,19,78,1,45,12]
-maxprofit(a)
+maxprofit(a)'''
+#permutatin question
+'''articles = ['a', 'the', 'that']
+adjectives = ["good", "bad", "nice", "blue", "light"]
+words = ["city", "sky", "water", "person"]
+for i in articles:
+    for j in adjectives:
+        for k in words:
+            print(f"{i} {j} {k}")'''
+#average and sd
+l=[25,45,95,45,25,65]
+d=[]
+s=0
+ds=0
+for i in range(len(l)):
+    s+=l[i]
+a=s/len(l)
+for j in range(len(l)):
+    d.append((l[j]-a)**2)
+for k in range(len(d)):
+    ds+=d[k]
+sd=(ds/(len(l)))**0.5
+print(a,sd)

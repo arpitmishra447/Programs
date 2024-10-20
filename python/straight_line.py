@@ -1,4 +1,4 @@
-def learn(x1,x2,y1,y2):
+def learn(x1,y1,x2,y2):
     m=(y2-y1)/(x2-x1)
     c=((y2*x1)-(y1*x2))/(x1-x2)
     return m,c
