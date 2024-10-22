@@ -24,15 +24,14 @@ for i in articles:
         for k in words:
             print(f"{i} {j} {k}")'''
 #average and sd
-l=[25,45,95,45,25,65]
-d=[]
+l=list(map(eval,input("Enter the elements:").split()))
+#l=list(eval(input("Enter the elements:")))
 s=0
 ds=0
 for i in range(len(l)):
     s+=l[i]
 a=s/len(l)
-for j in range(len(l)):
-    d.append((l[j]-a)**2)
+d=[(l[j]-a)**2 for j in range(len(l))]
 for k in range(len(d)):
     ds+=d[k]
 sd=(ds/(len(l)))**0.5
