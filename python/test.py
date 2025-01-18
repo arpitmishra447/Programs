@@ -1,4 +1,4 @@
-def f(a,b):
+'''def f(a,b):
     if b==0:
         print("enter valid value!!")
         exit()
@@ -6,7 +6,7 @@ def f(a,b):
         return a
     return f(a-b,b)
         
-print(f(4,2))
+print(f(4,2))'''
 '''def is_inside_rectangle(x1,y1,x2,y2,x,y):
     return (x<=x1 and x>=x2 and y<=y1 and y>=y2) or (x>=x1 and x<=x2 and y>=y1 and y<=y2) 
  
